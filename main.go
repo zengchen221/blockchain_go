@@ -1,7 +1,7 @@
 package main
 
 import (
-	"publicchain1803/day10_01_Handle_Message/BLC"
+	"./BLC"
 )
 
 func main() {
