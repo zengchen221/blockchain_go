@@ -129,7 +129,7 @@ func (cli *CLI) Run() {
 		//from:=*flagSendFromData
 		//to:=*flagSendToData
 		//amount:=*flagSendAmountData
-		from :=(*flagSendFromData)     //[]string
+		from := JSONToArray(*flagSendFromData)     //[]string
 		to := JSONToArray(*flagSendToData)         //[]string
 		amount := JSONToArray(*flagSendAmountData) //[]string
 		for i := 0; i < len(from); i++ {
