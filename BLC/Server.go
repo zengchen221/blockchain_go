@@ -77,8 +77,6 @@ func handleConnection(conn net.Conn,bc *BlockChain){
 		fmt.Println("读不懂的命令。。")
 	}
 	defer conn.Close()
-
-
 }
 
 

@@ -60,8 +60,6 @@ func NewWallets(nodeID string) *Wallets{
 		log.Panic(err)
 	}
 	return &wallets
-
-
 }
 
 func (ws *Wallets) CreateNewWallet(nodeID string){

@@ -10,7 +10,6 @@ type TxOutputs struct {
 	UTXOs []*UTXO
 }
 
-
 //序列化
 func (outs *TxOutputs) Serialize()[]byte{
 	var buff bytes.Buffer
@@ -27,7 +26,6 @@ func (outs *TxOutputs) Serialize()[]byte{
 //反序列化
 func DeserializeTxOutputs(data []byte) *TxOutputs{
 	txOutputs:=TxOutputs{}
-
 
 	reader:=bytes.NewReader(data)
 	decoder:=gob.NewDecoder(reader)
